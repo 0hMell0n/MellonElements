@@ -1,0 +1,87 @@
+#Плагин написан 0hMell0n
+#В случае обнаружения бага идите нахуй
+Hubs:
+- MLobby-1
+- MLobby-2
+HubAliases:
+- lobby
+- leave
+Limbo: 'Limbo-1'
+Motd:
+  Allow: true
+  Random: false
+  List:
+  - '&a&l0hMell0n MC &8- &6www.mellon.top &81.8 - 1.16.5{newline}&6>> &eЕБАТЬ, ЭТО РАБОТАЕТ!'
+  - '&a&l0hMell0n MC &8- &6www.mellon.top &81.8 - 1.16.5{newline}&6>> &eВАЛЕРА ТОП!!!!!!'
+  - '&a&l0hMell0n MC &8- &6www.mellon.top &81.8 - 1.16.5{newline}&6>> &eStormStudio Minecraft топ'
+TabList: #Доступные плейсхолдеры: {server}, {newline}, {ping}, {player}
+  Allow: true
+  header: '&a&l0hMell0n MC{newline}&fСервер: &c{server}'
+  footer: '{newline}&fГруппа ВК: &chttps://vk.com/ITZSTONLEX{newline}&fКупить донат: &cwww.mellon.top'
+Messages:
+  NoPermissions: '&cУ Вас нет прав!'
+  NoOnline: '&cДанный игрок не в сети!'
+  Server:
+    Allow: true
+    Server: '&aВы были телепортированы на сервер &2{server}'
+    Usage: '&eИспользуйте - &6/server [сервер]'
+    NoExists: '&cДанный сервер не существует!'
+    AlreadyConnected: '&cВы уже находитесь на данном сервере!'
+  Find:
+    Allow: true
+    Usage: '&eИспользуйте - &6/find [ник]'
+    Find: '&a{player} &fнаходится на сервере - &a{server}'
+  Report: |-
+    &fЕсли Вы хотите подать жалобу на игрока,
+    &fто Вы можете оставить заявку в нашем обсуждении
+    &fжалоб: &chttps://vk.com/seltixhero_yt
+  Rules: |-
+    &fПравила написаны в нашей
+    &fгруппе ВК: &chttps://vk.com/seltixhero_yt
+  Ping:
+    Allow: true
+    Ping: '&eВаш пинг: &6{ping}'
+    Other: '&eПинг игрока &6{player} &e- &6{ping}'
+  Ignore:
+    Allow: true
+    Usage: '&eИспользуйте - &6/ignore [ник]'
+    Yourself: '&cВы не можете игнорировать самого себя!'
+    Ignore: '&fТеперь Вы игнорируете игрока &a{player}'
+    UnIgnore: '&fВы больше не игнорируете &a{player}'
+    Target: '&cУ данного игрока отключен ЛС'
+    You: '&cВы игнорируете данного игрока!'
+  IgnoreAll:
+    Allow: true
+    Ignore: '&fТеперь Вам никто не может писать в ЛС'
+    UnIgnore: '&fТеперь Вам могут писать все'
+  Message:
+    Allow: true
+    Yourself: '&cВы не можете отправлять сообщения самому себе!'
+    Usage: '&eИспользуйте - &6/msg [ник] [сообщение]'
+    To: '&6[{from} > Вы]: &f{message}'
+    From: '&6[Вы > {target}]: &f{message}'
+  Where:
+    Allow: true
+    Where: '&fВы находитесь на сервере - &a{server}'
+  Send:
+    Allow: true
+    Usage: '&eИспользуйте - &6/send [ник] [сервер]'
+    From: '&fВы телепортировали &a{player} &fна сервер &a{server}'
+    To: '&fВы были телепортированы &a{sender} &fна сервер &a{server}'
+  Online:
+    Allow: true
+    Online: '&fОбщий онлайн серверов - &a{online}'
+    Another: '&fОнлайн сервера &a{server} &f- &a{online}'
+  Alert:
+    Allow: true
+    Usage: '&eИспользуйте - &6/alert [сообщение]'
+    Title:
+      header: '&e&lОповещение'
+      footer: '&f{message}'
+    Chat: '&e&lОповещение: &f{message}'
+  Reload: '&aКонфигурация успешно переазгружена!'
+  Hub:
+    Allow: true
+    Already: '&cВы уже в лобби!'
+    NeDostupnoNiOdnogo: '&cВсе лобби недоступны!'
+    LimboKick: '&cСервер, накотором Вы находились, упал, перемещаю Вас в Limbo-1: {reason}'
